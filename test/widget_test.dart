@@ -7,12 +7,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'package:monster/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
     await tester.pumpWidget(MyApp());
 
     // Verify that our counter starts at 0.
