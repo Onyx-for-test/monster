@@ -64,9 +64,9 @@ class _LaunchScreenState extends State<LaunchScreen> {
 
 
   @override
-  Future<void> initState() async {
+  void initState() {
     super.initState();
-    await Firebase.initializeApp();
+    //await Firebase.initializeApp();
     Authentication auth = Authentication();
 
     auth.getUser().then((user) {
