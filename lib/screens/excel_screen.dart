@@ -423,7 +423,7 @@ class _SimpleTimeSeriesChartState extends State<ExcelScreen> {
       dateValue = DateTime.parse(dataList[0]);
       // print(csvTable[i][2]);
       if (dataList[2]?.runtimeType == String) {
-        assetValue = NumberFormat().parse(dataList[2]!.toString()) as num;
+        assetValue = NumberFormat().parse(dataList[2].toString());
       } else {
         assetValue = dataList[2] as num;
       }
