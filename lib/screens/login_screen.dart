@@ -96,13 +96,13 @@ class _LoginScreenState extends State<LoginScreen> {
         padding: const EdgeInsets.only(top: 100),
         child: SizedBox(
             height: 50,
-            child: RaisedButton(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Theme.of(context).colorScheme.secondary,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
-              color: Theme
-                  .of(context)
-                  .colorScheme.secondary,
-              elevation: 3,
+                elevation: 3,
+              ),
               child: Text(buttonText),
               onPressed: submit,
             )
