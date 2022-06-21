@@ -140,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget secondaryButton() {
     String buttonText = !_isLogin ? 'Login' : 'Sign up';
-    return FlatButton(
+    return TextButton(
       child: Text(buttonText),
       onPressed: () {
         setState(() {
