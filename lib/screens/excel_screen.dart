@@ -25,10 +25,7 @@ import 'package:excel/excel.dart';
 
 class ExcelScreen extends StatefulWidget {
   final List<String?> userList;
-
-  ExcelScreen(this.userList) {
-    Firebase.initializeApp();
-  }
+  ExcelScreen(this.userList);
 
   // const SimpleTimeSeriesChart();
 
