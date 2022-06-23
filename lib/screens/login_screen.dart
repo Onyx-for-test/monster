@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Form(child: Column(
             children: <Widget>[
               Padding(padding: EdgeInsets.zero,
-                  child: Image.asset('icons/icon.png',
+                  child: Image.asset('icons/icon3.png',
                     width: 150.0, height: 150.0,) ),
               emailInput(),
               passwordInput(),
