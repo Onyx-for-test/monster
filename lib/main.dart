@@ -24,7 +24,7 @@ void main() async {
 
   );
   // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-
+  await Future.delayed(Duration(seconds: 3));
   runApp(MyApp());
 }
 
